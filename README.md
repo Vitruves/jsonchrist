@@ -14,7 +14,6 @@ A JSON processor and formatter with advanced features.
 - ✨ Syntax Highlighting: Colorized JSON output
 - 📝 Edit Mode: Generate editable node structure
 - 🔎 Index: Create searchable value index
-- 🔄 Format Conversion: Convert JSON to CSV/TSV formats
 
 ## Installation
 
@@ -45,7 +44,6 @@ make
 - `--no-color`      Disable colored output
 - `--indent N`      Set indentation level (default: 4)
 - `-o, --output FILE` Write output to FILE
-- `--convert FORMAT` Convert JSON to another format (csv, tsv)
 - `-h, --help`      Display help message
 
 ### Examples
@@ -62,9 +60,6 @@ make
 
 # Convert JSON to CSV
 ./jsonchrist --convert csv input.json > output.csv
-
-# Convert JSON to TSV
-./jsonchrist --convert tsv input.json > output.tsv
 ```
 
 ## Building from Source
