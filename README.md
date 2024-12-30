@@ -1,6 +1,6 @@
 # jsonchrist
 
-A powerful JSON processor and formatter with advanced features.
+A JSON processor and formatter with advanced features.
 
 ## Features
 
@@ -83,7 +83,7 @@ make test   # Run tests
 
 ## License
 
-[Your chosen license]
+MIT
 
 ## Contributing
 
