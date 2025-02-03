@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -pedantic -O2 -std=c11
-LDFLAGS =
+CFLAGS = -Wall -Wextra -Werror -pedantic -O2 -std=c11 -D_POSIX_C_SOURCE=200809L
+LDFLAGS = 
 INCLUDES = -Isrc
 
 SRCDIR = src
@@ -10,7 +10,7 @@ SRCS = src/json_format.c src/json_parser.c src/json_stats.c src/jsonchrist.c
 OBJS = $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 TARGET = jsonchrist
 
-.PHONY: all clean dirs
+.PHONY: all clean dirs test
 
 all: dirs $(TARGET)
 
@@ -30,4 +30,4 @@ test: $(TARGET)
 	./$(TARGET) --validate test.json
 	./$(TARGET) --tree test.json
 	./$(TARGET) --pretty --indent 2 test.json
-	./$(TARGET) --stats test.json 
+	./$(TARGET) --stats test.json
