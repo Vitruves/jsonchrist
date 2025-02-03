@@ -18,7 +18,7 @@ A JSON processor and formatter with advanced features.
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/jsonchrist.git
+git clone https://github.com/vitruves/jsonchrist.git
 cd jsonchrist
 make
 ```
